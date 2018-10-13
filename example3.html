@@ -20,13 +20,15 @@
             one.value = "";
             
             var curList = msg.innerHTML;
-            msg.innerHTML = curList + "<li>" + newListItem + "</li>"
+            msg.innerHTML = curList + '<li style="background:'  + color + '">' + newListItem + "</li>"
             if(color === "red"){
                 color = "blue";
             } else {
                 color = "red"
             }
-            msg.style="background: " + color;
+            //msg.style="background: " + color;
+
+            one.focus();
         }
     </script>
 </html>
