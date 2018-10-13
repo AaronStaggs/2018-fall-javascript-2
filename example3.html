@@ -2,8 +2,16 @@
     <head>
         <title>My JavaScript Website</title>
     </head>
+    <body>
+            <input type="text" id="one">
+            <input type="text" id="two">
+            <button onclick="myMessage()" id="Submit">Submit</button> 
+        </body>
     <script>
-        alert("Welcome!!")
-        console.log("This is a message")
+        function myMessage(){
+            var message = "Thanks for the click!!"
+            console.log(message)
+            alert(message)
+        }
     </script>
 </html>
