@@ -36,17 +36,46 @@
 //     ourObject[1].firstname;
 // }
 
-var tmp = {
-    repeat3: function(x){
-        for(var i=0; i <= 3; i++){
-            x();
-        }
+// var tmp = {
+//     repeat3: function(x){
+//         for(var i=0; i <= 3; i++){
+//             x();
+//         }
+//     },
+//     hello: function(){
+//         console.log("Goodbye")
+//     }
+// }
+
+// function hello(){
+//     console.log("Hllo")
+// }
+
+
+var Maths = {
+    add: function(x, y){
+        // return x + y;
+        var sum = x + y
+        console.log(sum)
     },
-    hello: function(){
-        console.log("Goodbye")
+    subtract: function(x, y){
+        //return x - y;
+        var sub = x - y
+        console.log(sub)
+    },
+    divide: function(x, y){
+        //return x / y;
+        var div = x / y
+        console.log(div)
+    },
+    multiply: function(x, y){
+        //return x * y;
+        var mul = x * y 
+        console.log(mul)
     }
 }
 
-function hello(){
-    console.log("Hello")
-}
+Maths.add(5,4)
+Maths.subtract(5,4)
+Maths.divide(5,4)
+Maths.multiply(5,4)
